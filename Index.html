@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Bibi Tersayang 🤍</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4e9, #fff8f0);
+      color: #704956;
+      min-height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 70px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .flower {
+      font-size: 55px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(48px, 9vw, 80px);
+      color: #c66b88;
+      margin: 20px 0;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      line-height: 1.9;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.85);
+      border: 1px solid #f7ccd8;
+      border-radius: 25px;
+      padding: 40px 30px;
+      box-shadow: 0 15px 45px rgba(193,100,130,0.15);
+      margin-top: 30px;
+    }
+
+    .card h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 45px;
+      color: #c66b88;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #d986a2, #bd6483);
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      margin: 15px 5px;
+      box-shadow: 0 7px 20px rgba(189,100,131,0.25);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+
+    #surat {
+      display: none;
+      animation: muncul 1s ease;
+    }
+
+    @keyframes muncul {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .isi-surat {
+      font-size: 14px;
+      line-height: 2.2;
+      text-align: center;
+    }
+
+    .isi-surat p {
+      margin-bottom: 22px;
+    }
+
+    .highlight {
+      color: #bd6483;
+      font-weight: 600;
+    }
+
+    .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 38px;
+      color: #c66b88;
+      margin-top: 30px;
+    }
+
+    .heart {
+      position: fixed;
+      top: -30px;
+      pointer-events: none;
+      z-index: 1;
+      animation: jatuh linear forwards;
+    }
+
+    @keyframes jatuh {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      padding: 35px 15px;
+      font-size: 12px;
+      color: #aa7b8b;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 45px 15px;
+      }
+
+      .card {
+        padding: 30px 20px;
+      }
+
+      .isi-surat {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="flower">🌷🤍🌷</div>
+
+    <h1>Happy Birthday</h1>
+
+    <h2 style="color:#bd6483;">
+      Bibi Kita Tersayang
+    </h2>
+
+    <p class="subtitle">
+      Untuk perempuan hebat yang Allah hadirkan
+      dalam kehidupan Poppy dan Ai.
+      <br>
+      Ada sebuah surat kecil yang ditulis
+      dengan penuh cinta untuk Bibi.
+    </p>
+
+    <button onclick="bukaSurat()">
+      💌 Buka Surat dari Poppy & Ai
+    </button>
+
+    <div class="card" id="surat">
+
+      <h2>For Our Lovely Bibi 🤍</h2>
+
+      <div class="isi-surat">
+
+        <p class="highlight">
+          Barakallah fii umrik,
+          Bibi kita tersayang. 🤍🌷
+        </p>
+
+        <p>
+          Selamat bertambah usia untuk salah satu
+          perempuan hebat yang Allah hadirkan
+          dalam kehidupan Poppy dan Ai.
+        </p>
+
+        <p>
+          Bibi, mungkin Poppy dan Ai tidak selalu
+          pandai mengungkapkan rasa sayang melalui
+          kata-kata. Namun, di hari yang istimewa ini,
+          Poppy dan Ai ingin Bibi tahu bahwa
+          kehadiran Bibi begitu berarti
+          dalam kehidupan kami berdua.
+        </p>
+
+        <p>
+          Bagi Poppy dan Ai, Bibi bukan hanya
+          seorang bibi, tetapi juga sosok ibu
+          yang selalu memberikan kasih sayang,
+          perhatian, dan ketulusan tanpa pernah
+          meminta balasan.
+        </p>
+
+        <p>
+          Terima kasih karena selalu baik kepada
+          Poppy dan Ai, selalu menerima kami
+          dengan penuh kasih, dan menjadi salah
+          satu tempat kami merasakan hangatnya
+          cinta seorang ibu.
+        </p>
+
+        <p>
+          Mungkin Bibi tidak pernah menyadari
+          betapa berharganya hal-hal kecil yang
+          Bibi lakukan, tetapi percayalah,
+          semuanya memiliki tempat yang begitu
+          istimewa di hati kami. 🥹❤️
+        </p>
+
+        <p>
+          Di hari istimewa ini, Poppy dan Ai
+          tidak meminta banyak kepada Allah.
+          Kami hanya berharap semoga Allah
+          senantiasa menjaga Bibi,
+          memberikan kesehatan,
+          memanjangkan usia dalam keberkahan,
+          melapangkan rezeki,
+          serta memudahkan setiap langkah
+          dan urusan Bibi.
+        </p>
+
+        <p>
+          Semoga setiap lelah Bibi digantikan
+          dengan kebahagiaan, setiap doa baik
+          Bibi Allah kabulkan, dan setiap
+          kebaikan yang Bibi berikan kembali
+          kepada Bibi dalam bentuk keberkahan
+          yang berlipat ganda.
+        </p>
+
+        <p class="highlight">
+          Bibi, tetaplah sehat dan bahagia, ya. 🤍
+        </p>
+
+        <p>
+          Karena masih banyak hari indah
+          yang ingin Poppy dan Ai lewati
+          bersama Bibi.
+          Masih banyak cerita yang ingin
+          kami bagikan, masih banyak kebahagiaan
+          yang ingin kami rasakan bersama.
+        </p>
+
+        <p>
+          Terima kasih sudah menjadi bagian
+          yang begitu indah dalam hidup kami.
+          Jika suatu hari Poppy dan Ai belum
+          mampu membalas semua kebaikan Bibi,
+          semoga Allah sendiri yang membalasnya
+          dengan segala kebaikan,
+          baik di dunia maupun di akhirat.
+        </p>
+
+        <p class="highlight">
+          Selamat ulang tahun, Bibi sayang. 🤍
+        </p>
+
+        <p>
+          Poppy dan Ai mungkin tidak selalu
+          mengatakannya, tetapi kami sangat
+          bersyukur Allah menghadirkan Bibi
+          dalam kehidupan kami.
+        </p>
+
+        <p class="highlight">
+          Bibi adalah salah satu bentuk
+          kasih sayang Allah yang begitu indah
+          untuk Poppy dan Ai. 🥹🤍
+        </p>
+
+        <p>
+          Tetaplah menjadi Bibi yang kami kenal,
+          yang penuh kasih, hangat,
+          dan selalu memiliki tempat
+          istimewa di hati kami.
+        </p>
+
+        <p class="highlight">
+          We love you so much, Bibi. ❤️🌷
+        </p>
+
+        <div class="signature">
+          With All Our Love,<br>
+          Poppy & Ai 🤍
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Made with Love 🤍
+    <br>
+    Poppy & Ai
+  </footer>
+
+  <script>
+    function bukaSurat() {
+      const surat = document.getElementById("surat");
+
+      surat.style.display = "block";
+
+      surat.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    function buatHati() {
+      const hati = document.createElement("div");
+
+      hati.className = "heart";
+
+      const simbol = ["🤍", "💗", "🌸", "🌷", "✨"];
+
+      hati.innerHTML =
+        simbol[Math.floor(Math.random() * simbol.length)];
+
+      hati.style.left = Math.random() * 100 + "vw";
+
+      hati.style.fontSize =
+        (12 + Math.random() * 15) + "px";
+
+      hati.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+      document.body.appendChild(hati);
+
+      setTimeout(() => {
+        hati.remove();
+      }, 10000);
+    }
+
+    setInterval(buatHati, 700);
+  </script>
+
+</body>
+</html>
